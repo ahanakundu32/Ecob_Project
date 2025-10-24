@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../execution/css/Ecob_style_RWD_css.css">
+    <title>Ecob</title>
+
+        <!-- Fav Icon Link -->
+
+    <link rel="icon" href="../../raw/png/logoecob.png" type="image/png">
+
+        <!-- Font Awesome CDN Link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <linl rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css">
+
+        <!-- Google Font Link -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header Section  Start -->
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../raw/png/logoecob.png" alt="Logo" title="ECOB">
+            </div>    
+            <div class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#about">About us</a>
+                    <a href="#products">Produts</a>
+                    <a href="#category">Services</a>
+                    <a href="#testimonial">Testimonials</a>
+                    <a href="#shop">Shop</a>
+                    <a href="#contact">Contact Us</a>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+               <div class="share">
+                    <a class="links" href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f" id="face" title="Facebook"></i></a>
+
+                    <a class="links" href="https://www.instagram.com/accounts/login/" target="_blank">
+                    <i class="fa-brands fa-instagram" id="insta" title="Instagram"></i></a>
+      
+                    <a class="links" href="https://twitter.com/i/flow/login" target="_blank">
+                    <i class="fa-brands fa-twitter" id="twit" title="Twitter"></i></a>
+               </div>
+        </nav>
+
+        <div class="dropdown_menu">
+            <a href="#home">Home</a>
+            <a href="#about">About us</a>
+            <a href="#products">Produts</a>
+            <a href="#category">Services</a>
+            <a href="#testimonial">Testimonials</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact ">Contact Us</a>                
+        </div>
+     
+            <script>
+                const toggleBtn = document.querySelector('.toggle_btn')
+                const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+
+                toggleBtn.onclick = function () {
+                    dropDownMenu.classList.toggle('open')
+                    const isOpen = dropDownMenu.classList.contains('open')  
+                
+                    toggleBtnIcon.classList = isOpen
+                    ? "fa-solid fa-xmark"
+                    : "fa-solid fa-bars"
+                    }
+        </script>
+    </header>
+
+
+
+    <!-- Header Section End  -->
+
+    <!-- Slider Section Start -->
+    
+    <div class="slideshow">
+        <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            
+                        <div class="slide s1">
+                            <img src="../../raw/png/slider1.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="../../raw/png/slider2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="../../raw/png/slider3.png" alt="">
+                        </div>
+                        
+                        <div class="navigation">
+                            <label for="r1" class="bar"></label>
+                            <label for="r2" class="bar"></label>
+                            <label for="r3" class="bar"></label>
+                        </div>
+                    </div>
+    </div>
+                
+    <!-- Slider Section End -->
+                
+    <!--- About Us Start --->
+            
+                <section class="about" id="about">
+                    <div class="con_about">
+                        <div class="heading">
+                            <h1>ABOUT US</h1>
+                            <p>Welcome to <span>ECOB</span>, where innovation meets sustainability. At ECOB, we believe the future of transportation is electric. Our mission is to revolutionize urban mobility with cutting-edge electric bikes designed for efficiency, style, and environmental responsibility.We are driven by the desire to create a cleaner, greener world, one ride at a time.Every EV bike we craft is a blend of advanced technology, ergonomic comfort, and unmatched reliability.</p>
+                        </div>
+                        <div class="aboutbody">
+                            <div class="row">
+                                <div class="col-vis">
+                                    <div class="visicon">
+                                        <i class="fa-solid fa-binoculars"></i>
+                                        
+                                        <h3>VISION</h3>
+                                        
+                                        <p>We envision a world where sustainable mobility is accessible to all, transforming the way people commute and connect.</p>
+                                        
+                                        <div class="btn">
+                                            <input type="button" value="Learn More">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="col-mis">
+                                    <div class="missicon">
+                                        
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <h3>MISSION</h3>
+                                        
+                                        <p>Our mission is to transform urban mobility by delivering eco-friendly electric bikes that merge innovation, performance, and sustainability.</p>
+                                        
+                                        <div class="btn">
+                                            <input type="button" value="Learn More">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-ach">
+                                    <div class="achievment">
+                                        <i class="fa-solid fa-award"></i>
+                                        
+                                        <h3>ACHIEVMENT</h3>
+                                        
+                                        <p>Award-Winning Designs<br>
+                                            Eco-Friendly Impact<br>
+                                            Customer Trust<br>
+                                            Global Expansion<br>
+                                            Innovative Technology</p>
+                                            
+                                            <div class="btn">
+                                                <input type="button" value="Learn More">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                    
+                            </div>
+                        </div>    
+                </section>    
+
+        <!---- About Us End ---->
+        
+        <!---------- Product Section Start ------------>
+    
+    <section class="product" id="products">
+        <div class="p_heading">
+            <h1>PRODUCTS</h1>
+        </div>
+            
+          <div class="product_container">
+              <div class="product_box">
+                    <div class="p_img">
+                        <img src="../../raw/png/product_1.png" alt="">
+                        <P class="name">Ecob V.0 </P>
+                    </div>
+                    
+                    <div class="p_text">
+                        <ul>
+                            <li>30L Storage</li>
+                            <li>Front Disk Break</li>
+                            <li>Portable Charger</li>
+                        </ul>
+                        
+                         <div class="feature">
+                            <div class="feature_1">
+                                <span>Battery</span>
+                                <span>2.2 kwh</span>
+                            </div>
+                            <div class="feature_2">
+                                <span>Real Rang</span>
+                                <span>75 km</span>
+                            </div>
+                            <div class="feature_3">
+                                <span>0-80% charging</span>
+                                <span>2 hr</span>
+                            </div>
+                         </div>  
+                        
+                         <div class="price">
+                            <span>Starting From</span>
+                            <span>Rs. 69,999<sup>*</sup> </span>
+                        </div>
+                        
+                        <div class="button">
+                            <button class="btn_1">Know More</button>
+                            <button class="btn_2">Buy Now</button>
+                        </div>
+                    </div>
+               </div>
+               
+               <div class="product_box">
+                    <div class="p_img">
+                        <img src="../../raw/png/product_2.png" alt="">
+                        <P class="name">Ecob V.2 </P>
+                    </div>
+                    
+                    <div class="p_text">
+                        <ul>
+                            <li>40L Storage</li>
+                            <li>Front Disk Break</li>
+                            <li>Bluetooth Connection</li>
+                        </ul>
+                        
+                        <div class="feature">
+                            <div class="feature_1">
+                                <span>Battery</span>
+                                <span>3.2 kwh</span>
+                            </div>
+                            <div class="feature_2">
+                                <span>Real Rang</span>
+                                <span>85 km</span>
+                            </div>
+                            <div class="feature_3">
+                                <span>0-80% charging</span>
+                                <span>2 hr</span>
+                            </div>
+                         </div>  
+                         
+                         <div class="price">
+                            <span>Starting From</span>
+                            <span>Rs. 79,999<sup>*</sup> </span>
+                        </div>
+                        
+                         <div class="button">
+                            <button class="btn_1">Know More</button>
+                            <button class="btn_2">Buy Now</button>
+                         </div>
+                        </div>
+                    </div>   
+                    
+                    <div class="product_box">
+                    <div class="p_img">
+                        <img src="../../raw/png/product_3.png" alt="">
+                        <P class="name">Ecob V.3 </P>
+                    </div>
+                    
+                    <div class="p_text">
+                        <ul>
+                            <li>50L Storage</li>
+                            <li>Front Disk Break</li>
+                            <li>Portable Charger</li>
+                        </ul>
+                        
+                        <div class="feature">
+                            <div class="feature_1">
+                                <span>Battery</span>
+                                <span>4.5 kwh</span>
+                            </div>
+                            <div class="feature_2">
+                                <span>Real Rang</span>
+                                <span>90 km</span>
+                            </div>
+                            <div class="feature_3">
+                                <span>0-80% charging</span>
+                                <span>2 hr</span>
+                            </div>
+                        </div>  
+                        
+                        <div class="price">
+                            <span>Starting From</span>
+                            <span>Rs. 89,999<sup>*</sup> </span>
+                        </div>
+                        
+                         <div class="button">
+                            <button class="btn_1">Know More</button>
+                            <button class="btn_2">Buy Now</button>
+                         </div>
+                    </div>
+                </div>   
+
+               <div class="product_box">
+                   <div class="p_img">
+                        <img src="../../raw/png/product_4.png" alt="">
+                        <P class="name">Ecob V.4 </P>
+                    </div>
+                    
+                    <div class="p_text">
+                        <ul>
+                            <li>50L Storage</li>
+                            <li>Front Disk Break</li>
+                            <li>Portable Charger</li>
+                        </ul>
+                        
+                        <div class="feature">
+                            <div class="feature_1">
+                                <span>Battery</span>
+                                <span>5.2 kwh</span>
+                            </div>
+                            <div class="feature_2">
+                                <span>Real Rang</span>
+                                <span>95 km</span>
+                            </div>
+                            <div class="feature_3">
+                                <span>0-80% charging</span>
+                                <span>3 hr</span>
+                            </div>
+                        </div>  
+                        
+                         <div class="price">
+                            <span>Starting From</span>
+                            <span>Rs. 94,999<sup>*</sup> </span>
+                         </div>
+                        
+                         <div class="button">
+                             <button class="btn_1">Know More</button>
+                             <button class="btn_2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                
+    </section>   
+            
+            <!---------- Product Section End -------------->  
+            
+             <!---------- Service Section Start -------------->
+            
+    <section class="service" id="category">
+                <div class="p_service">
+                    <h1>SERVICES</h1>
+                    
+                    <div class="container">
+                        <div class="stat">
+                            <img src="../../raw/png/house-icon.png" alt="Service Centers">
+                            <h2>50+</h2>
+                            <p>Authorised Service Centres</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="stat">
+                            <img src="../../raw/png/location-icon.png" alt="Cities Covered">
+                            <h2>100+</h2>
+                            <p>Cities Nationwide Connected</p>
+                        </div>
+                        <div class="divider"></div>
+                <div class="stat">
+                    <img src="../../raw/png/medal-icon.png" alt="Technicians">
+                    <h2>75+</h2>
+                    <p>Certified Technicians</p>
+                </div>
+                <div class="divider"></div>
+                <div class="stat">
+                    <img src="../../raw/png/headset-icon.png" alt="Customer Care">
+                    <h2>3yrs</h2>
+                    <p>Of Customer Care Expertise</p>
+                </div>
+            </div>   
+            
+            <div class="cardcontainer">
+                <div class="card">
+                    <div class="imgbx">
+                        <img src="../../raw/png/Comprehensive After-Sales Service.png" alt="Comprehensive After-Sales Service">
+                    </div>
+                    <div class="content">
+                        <h2> Comprehensive After-Sales Service</h2><br>
+                        <i>"Riding Green, Worry-Free!"</i>
+                        <p> We provide nationwide service support through certified technicians and authorized service centers to keep your EV bike in top condition.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="imgbx">
+                        <img src="../../raw/png/Expert Technicians & Genuine Spare Parts.png" alt="Expert Technicians & Genuine Spare Parts">
+                    </div>
+                    <div class="content">
+                        <h2> Expert Technicians & Genuine Spare Parts</h2><br>
+                        <i>"Your Ride Deserves the Best."</i>
+                        <p>Our team of 10000+ certified professionals ensures top-quality repairs with genuine EV components, enhancing durability and performance.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="imgbx">
+                        <img src="../../raw/png/Roadside Assistance.png" alt="Roadside Assistance">
+                    </div>
+                    <div class="content">
+                        <h2> 24/7 Customer Support & Roadside Assistance</h2><br>
+                        <i>"Support Anytime, Anywhere."</i>
+                        <p>Need help on the road? Our 24/7 roadside assistance and customer care experts ensure you’re never stranded.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="imgbx">
+                    <img src="../../raw/png/Smart Diagnostics & App Integration.png" alt="Smart Diagnostics & App Integration">
+                </div>
+                <div class="content">
+                    <h2>Smart Diagnostics & App Integration</h2><br>
+                    <i>"Tech-Driven Maintenance." </i>
+                    <p> Monitor battery health, track servicing schedules, and receive instant updates via our smart EV bike app, keeping you connected to your ride.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!---------- Service Section End -------------->
+
+     <!---------- Testimonial Section Start -------------->
+    <section class="testimonial" id="testimonial">
+            <div class="p_testimonial">
+                <h1>TESTIMONIALS</h1>
+
+                <div class="viewbox">
+                    <div id="testimonials">
+                        <div class="user">
+                            <img src="../../raw/png/Testimonial_1.png" alt="Profile_1">
+                            <p>“I was hesitant to switch to an EV bike, but after just one ride, I was hooked! It’s quiet, smooth, and incredibly efficient. I’ve cut my commute time, saved on fuel, and contributed to a cleaner environment—all in style!”</p>
+                            <h3>Priya S., Urban Explorer</h3>
+                        </div>
+                        
+                        <div class="user space">
+                            <img src="../../raw/png/Testimonial_2.png" alt="Profile_1">
+                            <p>- “This bike exceeded my expectations! The battery life is fantastic, and the ride quality is unmatched. Plus, knowing I’m making an eco-friendly choice every time I hit the road gives me real satisfaction.”</p>
+                            <h3>Arjun R., Daily Rider</h3>
+                        </div>
+                        
+                        <div class="user">
+                            <img src="../../raw/png/Testimonial_3.png" alt="Profile_1">
+                            <p>- “I love the futuristic design and how effortlessly it glides through the city. No more fuel expenses, no more pollution—just a sustainable, smart way to travel!”</p>
+                            <h3>Neha M., Tech Enthusiast</h3>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <span id="control1"></span>
+                        <span id="control2" class="active"></span>
+                        <span id="control3"></span>
+                    </div>            
+                </div>
+
+                <script>
+
+                    var testimonials = document.getElementById('testimonials');
+                    var control1 = document.getElementById('control1');
+                    var control2 = document.getElementById('control2');
+                    var control3 = document.getElementById('control3');
+
+                    control1.onclick=function(){
+                        testimonials.style.transform = "translateX(970px)";
+                        control1.classList.add("active");
+                        control2.classList.remove("active");
+                        control3.classList.remove("active");
+                    }
+
+                    control2.onclick=function(){
+                        testimonials.style.transform = "translateX(0px)";
+                        control1.classList.remove("active");
+                        control2.classList.add("active");
+                        control3.classList.remove("active");
+                    }
+
+                    control3.onclick=function(){
+                        testimonials.style.transform = "translateX(-970px)";
+                        control1.classList.remove("active");
+                        control2.classList.remove("active");
+                        control3.classList.add("active");
+                    }
+                </script>
+    </section>
+
+    <!---------- Testimonial Section End -------------->
+
+    <!---------- Shop Section Start ------------------->
+            
+        <section class="shop" id="shop">
+            <div class="p_shop">
+                <h1>SHOPS</h1>
+            </div>
+            <div class="box">
+                <div class="adress">
+                    <h3>Shah Cycle Trading Co</h3>
+                    <p><i class="fa-solid fa-map-location"></i>
+                    175 Bharat Complex, Arcot Sreenivasachar Street, <br>Bengaluru, Karnataka 560053</p><br>
+
+                    <h3>Urban EBykes – The eBicycle Company</h3>
+                    <p><i class="fa-solid fa-map-location"></i>
+                    63/12B, Ground Floor, Opp. Kirti Nagar Metro Station,<br>Rama Road, New Delhi</p><br>
+
+                    <h3>UNIROX EV Showroom</h3>
+                    <p><i class="fa-solid fa-map-location"></i>
+                    1A, Grant Lane, Esplanade, Bowbazar, <br> Kolkata, West Bengal</p>    
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30777437.930522326!2d60.862332834977906!3d19.669516205476185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1750265669548!5m2!1sen!2sin"referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>                
+            </div>
+        </section>
+            
+    <!------------- Shop Section End ---------------------->
+    
+
+    <!------------ Contact Us Section Start  -------------->
+        <section class="contact" id="contact">
+            <div class="us">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contactcontainer">
+                <div class="contactinfo">
+                    <div class="contactbox">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>28,Baguiati 4th lane,<br> Kolkata - 700028</p>
+                        </div>
+                    </div>
+
+                    <div class="contactbox">
+                        <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>(+91) 98747 48799</p>
+                        </div>
+                    </div>
+
+                    <div class="contactbox">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>ahana.kundu19@gmail.com</p>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="contactform">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+
+                        <div class="inputbox">
+                            <textarea required="required"> </textarea>
+                            <span>Type your Message...</span>
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>         
+        </section>    
+
+    <!----------- Contact Us Section End  ------------->
+  
+
+    <!----------- Footer Section Start ---------------->
+            
+            <footer>
+                <div class="fcontainer">
+                    <div class="flogo">
+                        <img src="../../raw/png/logoecob.png" alt="ECOB">
+                        <p>ECOB is redefining urban mobility with smart, sustainable, and stylish electric scooters built for the roads of tomorrow. Where innovation hits the road—ECOB electric scooters, built for change.</p>
+
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="quicklink">
+                        <h2>Support</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="fcontact">
+                        <h2>Contact Us</h2>
+                        <ul class="finfo">
+                            <li>
+                                 <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                <p>28,Baguiati, 4<sup>th</sup> Lane,<br> Kolkata - 700 028</p>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                                <p>(+91) 98747 48799</p>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                <p><a href="ahana.kundu19@gmail.com">ahana.kundu19@gmail.com</a></p>
+                            </li>
+                        </ul>                       
+                    </div>
+                    <div class="newsletter">
+                        <h2>Subscribe Our Newsletter</h2>
+                        <input type="text" name="" placeholder="Enter your Name">
+                        <input type="email" name="" placeholder="Enter your Email">
+                        <input type="submit" value="Subscribe" class="btn">
+                    </div>
+                </div>
+                    <div class="credit">&copy2025,www.ecob.com.All Rights Reserved.<a href="#">Privacy Policy.</a>
+                 </div>
+            </footer>
+
+            <!----------- Footer Section End  ------------->
+
+
+</body>
+</html>
